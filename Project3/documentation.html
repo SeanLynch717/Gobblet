@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="utf-8" />
+    <title>Gobblet</title>
+    <link href="CSS/stylesheet.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div id = "documentationwrapper">
+        <header>     
+            <nav class = "globalnav">
+                <div class = "navelement1"><a href = "index.html"> Home </a></div>
+                <div class = "navelement2"><a href = "proposal.html"> Proposal </a></div>
+                <div class = "navelement3"><a class = "active" href = "documentation.html"> Documentation </a></div>
+                <div class = "navelement4"><a href = "project.html"> Gobblet </a></div>
+            </nav>
+        </header>
+        <main>
+            <article id = "documentationarticle">
+                <div id = "prototypeprocess">
+                    <h2>
+                        Prototype Process:
+                    </h2>
+                    <ul>
+                        <li> Carefully chose the dimensions on the PIXI screen to be 1200px wide by 900px tall.</li>
+                        <li> Created the art assets, and set up the grid-like board.</li>
+                        <li> Set up the class architecture. The board is composed of Stacks, Stacks are composed of Pieces.</li>
+                        <li> Loaded 24 pieces into 6 different stacks off of the board.</li>
+                        <li> Enabled dragging functionality, and made pieces snap into place.</li>
+                        <li> Made game loop. Player moves, then the opponent moves. So on and so forth until there is a winner.</li>
+                    </ul>
+                    <h2>
+                        Final Process:
+                    </h2>
+                    <ul>
+                        <li> Began implementation of Alpha-Beta pruning with the minimax algorithm.</li>
+                        <li> Generated game tree with a depth of 3, and calculated (numerically) the best move for the opponent.</li>
+                        <li> Had issues with propegating information about the best move back up the tree, so decided to break from
+                            this method of AI, and focused on an alternative, with every intention to revist it in the near future.</li>
+                        <li> Started building a different AI that calculates moves based on a few rules. Move to a winning position if possible,
+                             Block the opponent from winning, and prioritize claiming center positions over outer positions.</li>
+                    </ul>
+                </div>
+                <div id = "resources">
+                    <h3>
+                        Resources:       
+                    </h3>
+                    <ul>
+                        <li><a href = "https://www.amazon.com/Blue-Orange-Gobblet-Board-Game/dp/B00006L50P">Gobblet Image</a></li>
+                        <li><a href = "https://coolors.co/3f4042-a77b5a-372821-c7c8ca-d0923c">Color Pallete</a></li>
+                        <li><a href = "https://boardgamegeek.com/boardgame/2266/gobblet">Game Information</a></li>
+                        <li><a href = "http://www.pngall.com/construction-sign-png/download/34990">Construction Sign</a></li>
+                        <li><a href = "https://www.w3schools.com/css/css_grid.asp">Grid Tutorial</a></li>
+                        <li><a href = "https://www.geeksforgeeks.org/minimax-algorithm-in-game-theory-set-1-introduction/"> Minimax Algorithm</a></li>
+                        <li><a href = "http://web.cs.ucla.edu/~rosen/161/notes/alphabeta.html"> Alpha Beta Pruning</a></li>
+                    </ul>
+                </div>
+            </article>
+
+        </main>
+        <footer>
+            <p>
+                Created by Sean Lynch
+            </p>
+        </footer>
+    </div> 
+</body>
+</html>

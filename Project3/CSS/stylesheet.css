@@ -1,0 +1,235 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#hometitle{
+    background-color: #c7c8ca;
+    padding:.001rem 0;
+    text-align: center;
+}
+h1{
+    font-size: 3rem;
+    text-decoration: underline;
+}
+#p1 h1, #p2 h1{
+    text-align: center;
+}
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.75rem;
+}
+.globalnav{
+    background-color: #372821; 
+    display: flex;
+    justify-content: center;
+}
+.globalnav a{
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    margin: 0 2rem;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    font-size: 150%;
+    text-align: center;
+    padding-top:3rem;
+}
+.globalnav a:hover{
+    background-color: #ddd;
+    color: black;
+    padding-bottom: 3rem;
+}
+.globalnav a.active{
+    background-color: #d0923c;
+    color:black;
+    padding-bottom: 3rem;
+}
+#homeimg{
+    display: flex;
+    justify-content: center;
+    background-color: #c7c8ca;
+    padding-bottom: 2rem;
+}
+#projectimg{
+    display: flex;
+    justify-content: center;
+    background-color: #c7c8ca;
+    border-bottom: solid 10px #372821; 
+    padding: 8.5rem 0;
+}
+#homeimg img{
+    border: solid 10px #a77b5a;
+    border-radius: 100px; 
+}
+#proposalimg{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #c7c8ca;
+}
+#p1 img, #p2 img{
+    border: solid 10px #a77b5a;
+    border-radius: 100px; 
+}
+#homecontent{
+    background-color: #d0923c;
+    padding: 2rem 3rem;
+    border-bottom: solid 10px #372821; 
+    border-top: solid 10px #372821; 
+}
+#projectcontent{
+    background-color: #d0923c;
+    padding: 2rem 3rem;
+    border-bottom: solid 10px #372821;
+}
+#prototypeprocess{
+    background-color: #d0923c;
+    padding: 2rem 3rem;
+    border-bottom: solid 10px #372821;
+}
+#resources{
+    background-color: #d0923c;
+    padding: 2rem 3rem;
+    vertical-align: middle;
+    line-height: 5rem;
+}
+#homesidebar{
+    background-color: #d0923c;
+    padding: 2rem 3rem; 
+}
+#homesidebar p img{
+    box-shadow: 10px 10px 5px black;
+}
+#genre, #platform, #story, #aesthetic, #gameplay, #aboutdev{
+    background-color: #d0923c;
+    padding: 2rem 3rem;
+    border-top: solid 10px #372821; 
+}
+footer{
+    background-color: #372821; 
+    color: white;
+    padding: 2rem;
+}
+footer p{
+    font-size: 1rem;
+}
+p{
+    font-size: 1.5rem;
+}
+ul{
+    font-size: 1.5rem;
+}
+#resources a:hover{
+    background-color: #ddd;
+}
+#resources a:visited{
+    color: purple;
+    font-weight: normal;
+}
+#resources a:focus{
+    color: black;
+}
+#resources a:link{
+    color: blue;
+    font-weight: bold;
+}
+#resources a:active{
+    color: black;
+}
+#game{
+    display: flex;
+    justify-content: center;
+    background-color: #cccccc;
+}
+@media screen and (min-width:760px){
+    #gamewrapper{
+        display: flex;
+    }
+    #left, #right{
+        width: 350px;
+        border: solid 5px #372821;
+        border-bottom: none;
+        border-top: none;
+        background-color: #d0923c;
+    }
+    #rules{
+        border: solid 5px #372821;;
+        background-color: black;
+        color: white;
+        text-align: center;
+
+    }
+    #homearticle{
+        display:flex;
+        justify-content: space-around;
+        background-color:  #c7c8ca;
+        padding:2rem;
+    }
+    #homecontent, #homesidebar{
+        width: 30%;
+        border: solid 10px #372821; 
+    }
+    #documentationarticle{
+        display:flex;
+        justify-content: space-around;
+        padding: 5rem;
+        background-color: #c7c8ca;
+    }
+    #prototypeprocess, #resources{
+        width: 30%;
+        border: none;
+        border: solid 10px #372821; 
+        min-height: 50vh;
+    }
+}
+@media screen and (min-width: 1250px){
+    #proposalgrid{
+        background-color: #c7c8ca;
+        display: grid;
+        grid-template-areas:
+            "Genre Platform"
+            "Story Aesthetic"
+            "Gameplay Aboutdev"; 
+            grid-template-rows: repeat(2, 1fr);
+        justify-content: space-around; 
+        align-content: space-around;         
+    }
+    #genre, #platform, #story, #gameplay, #aesthetic, #aboutdev{
+        border: solid 10px #372821;
+        margin: 1.5rem;
+    }
+    #genre{
+        grid-area: Genre;
+    }
+    #platform{
+        grid-area: Platform;
+    }
+    #story{
+        grid-area: Story;
+    }
+    #aesthetic{
+        grid-area: Aesthetic;
+    }
+    #gameplay{
+        grid-area: Gameplay;
+    }
+    #aboutdev{
+        grid-area: Aboutdev;
+    }
+}
+@media screen and (max-width: 800px){
+    .globalnav a{
+        margin:0 1rem;
+        padding:0;
+        padding-top:3rem;
+    }
+    #p1 img, #p2 img, #homeimg img{
+        width:80vw;
+    }
+}
+
+
+
+

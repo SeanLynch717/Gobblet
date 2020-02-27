@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="utf-8" />
+    <title>Gobblet</title>
+    <link href="CSS/stylesheet.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div id = "projectwrapper">
+        <header>     
+            <nav class = "globalnav">
+                <div class = "navelement1"><a href = "index.html"> Home </a></div>
+                <div class = "navelement2"><a href = "proposal.html"> Proposal </a></div>
+                <div class = "navelement3"><a href = "documentation.html"> Documentation </a></div>
+                <div class = "navelement4"><a class = "active" href = "project.html"> Gobblet </a></div>
+            </nav>
+        </header>
+        <main>
+            <div id = "gamewrapper">
+                <div id = "left">
+
+                </div>
+                <div  id = "game">
+
+                </div> 
+                <div id = "right">
+
+                </div> 
+            </div>   
+            <div id = "rules">
+                <h2>
+                    Rules
+                </h2>
+                <p>
+                    Each player starts with 12 pieces off of the board. Three large pieces, three medium pieces, three small pieces, and three tiny pieces.
+                    These pieces are arranged in three stacks like russian nesting dolls, which prevents the player from moving a medium piece before a large piece,
+                    and so on. The players take turns either moving one of their pieces in their off board stack onto the board, or a piece already on the board.
+                    The goal of the game is to connect four pieces in a row either horizontally, vertically, or diagonally. Lastly, this game wouldn't be complete
+                    without the ability to gobble your opponents pieces. In other words, the player may place one of their larger pieces ontop of any smaller piece. Use this
+                    to advance your stategy.
+                </p>
+            </div>      
+        </main>
+        <footer>
+            <p>
+                Created by Sean Lynch
+            </p>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.6.0/pixi.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.5/howler.js"></script>
+    <script src="js/utilities.js"></script>
+    <script src="js/classes.js"></script>   
+    <script src="js/main.js"></script>
+</body>
+</html>
